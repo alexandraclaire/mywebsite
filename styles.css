@@ -1,0 +1,176 @@
+body {
+	background:url(images/sativa.png);
+	font-size:16px;
+	margin:0;
+	line-height:1.4;
+	font-family:"Raleway", sans-serif;
+	text-align:justify;
+}
+
+h1 {
+	color:skyblue;
+	margin:0;
+	font-size:70px;
+	font-family:'Lobster', cursive;
+	font-weight:200;
+	text-align:justify;
+
+}
+
+h2 {
+	color:skyblue;
+}
+
+a {
+	color:slategrey
+}
+
+a:hover {
+	color:lightblue;
+	font-weight:bold;
+}
+
+/*Layout--------*/
+
+.wrapper{
+	padding:0 0.5em;
+	background:rgba(255,255,255,0.7);
+}
+
+.container {
+
+	margin:0 auto;
+	width:88%;
+	max-width:960px;
+}	
+
+
+
+header {
+
+	margin:0 auto;
+	width:88%;
+	max-width:960px;
+	background:rgba(174,184,185,0.5);
+	padding:0.5em 0;
+}
+
+
+footer {
+	margin:0 auto;
+	width:88%;
+	max-width:960px;
+	border:1px solid grey;
+	background:grey
+}
+
+blockquote {
+	padding:1em;
+	margin:1em;
+
+}
+
+hr 	{
+	border:1px solid grey;
+	margin:0 2em;
+
+}
+/*Navigation--------*/
+
+nav ul {
+	padding:0;
+
+}
+
+nav ul li {
+	float:left;
+	margin-right:0.5em;
+	list-style:none;
+
+}
+
+nav ul li a {
+	background:rgba(223,227,227,0.7);
+	padding:0.5em 1em;
+	border-radius:15px;
+	
+}
+
+/*Floats--------*/
+
+.align-right {
+	float:right;
+	margin:1em 0 1em 1em;
+}
+
+.align-left {
+	float:left;
+	margin:1em 1em 1em 0;
+}
+
+.align-center {
+	margin:0 auto;
+	display:block;
+
+}
+
+/*Bullets--------*/
+
+.list-no-bullets {
+
+	padding:0;
+	list-style:none;
+}
+
+.bullet {
+	height:16px;
+	width:16px;
+	background: url(images/bullet2.png);
+	display:inline-block;
+	margin:0 .5em -.1em 0;
+
+
+}
+
+/*Media Queries--------*/
+
+@media screen and (min-width:600px) {
+
+	main {
+		width:50%;
+		float:left;
+	}
+
+	hr {
+		display:none;
+	}
+
+	h1 {
+		font-size:90px;
+
+	}
+
+	blockquote {
+		margin:2em;
+
+	}
+
+	.secondary {
+		width:45%;
+		float:right;
+		border-radius:5px;
+		padding:.5em;
+
+	}
+} /*Need this bracket!---*/
+
+/* Misc.
+------------------------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}
